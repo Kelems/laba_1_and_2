@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header>
+      <p>Наше название сайта</p>
+    </header>
+    <main>
+      <text>
+        <h1>Решение квадратного уравнения</h1>
+        <h2>
+          a·x<sup><small>2</small></sup> + b·x + c = 0
+        </h2>
+        <form name="equation" action="javascript:square_equation()">
+          <input name="equation_a" type="text" placeholder="1" size="2.5" />
+          x <sup><small>2</small></sup> +
+          <input name="equation_b" type="text" placeholder="1" size="2.5" />
+          x +
+          <input name="equation_c" type="text" placeholder="0" size="2.5" />
+          = 0
+          <div>
+            <input type="submit" value="решить квадратное уравнение" />
+          </div>
+          <div>
+              <p>
+            <h3>Решение:</h3>
+            X<i><sub>1</sub> = </i>
+            <span id="x1">вы еще не ввели данные</span>
+            </p>
+            <p>
+              X<i><sub>2</sub> = </i>
+              <span id="x2">вы еще не ввели данные</span>
+            </p>
+          </div>
+        </form>
+      </text>
+      <sidebar>
+        <h2>Навигация</h2>
+        <div>
+          <button><a href="index.html">Главная страница</a></button>
+          <button><a href="contacts.html">Наши контакты</a></button>
+          <button><a href="info.html">О нас</a></button>
+          <button><a href="calculator.html">Калькулятор</a></button>
+        </div>
+      </sidebar>
+    </main>
+    <footer>
+      <p>&copy; Сделано Струковым.Д.М из группы ВПИ21</p>
+    </footer>
+  </body>
+  <script src="calc.js"></script>
+</html>
